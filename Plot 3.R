@@ -56,7 +56,7 @@ library(grDevices)
 
 # plot sub_metering_1 first and add the additiona two lines for sub_metering_2 and sub_metering_3
 png(filename = "Plot 3.png", width = 480, height = 480, units = "px")
-plot(elec_power$Time, elec_power$Sub_metering_1, type = "l", ylab = "Global Active Power (Kilowatts)", xlab = "")
+plot(elec_power$Time, elec_power$Sub_metering_1, type = "l", ylab = "Energy Sub Metering", xlab = "")
 lines(elec_power$Time, elec_power$Sub_metering_2, col = "red")
 lines(elec_power$Time, elec_power$Sub_metering_3, col = "blue")
 legend("topright", lwd = 1, col = c("black", "blue", "red"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
