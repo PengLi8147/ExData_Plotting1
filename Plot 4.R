@@ -62,7 +62,7 @@ plot(elec_power$Time, elec_power$Global_active_power, type = "l", ylab = "Global
 # Top right plot
 plot(elec_power$Time, elec_power$Voltage, type = "l", ylab = "Vottage", xlab = "Datetime", lwd=2)
 # Bottom left plot
-plot(elec_power$Time, elec_power$Sub_metering_1, type = "l", ylab = "Global Active Power (Kilowatts)", xlab = "")
+plot(elec_power$Time, elec_power$Sub_metering_1, type = "l", ylab = "Energy Sub Metering", xlab = "")
 lines(elec_power$Time, elec_power$Sub_metering_2, col = "red")
 lines(elec_power$Time, elec_power$Sub_metering_3, col = "blue")
 legend("topright", lwd = 1, col = c("black", "blue", "red"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
